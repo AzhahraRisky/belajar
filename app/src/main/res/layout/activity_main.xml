@@ -39,7 +39,7 @@
     </RelativeLayout>
     <LinearLayout
         android:id="@+id/layout1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/header"
         android:layout_marginTop="18dp">
@@ -58,8 +58,8 @@
             android:id="@+id/tv_see"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="125dp"
-            android:text="See items ➡"
+            android:layout_marginLeft="165dp"
+            android:text="See all"
             android:textSize="18dp"/>
 
     </LinearLayout>
@@ -222,25 +222,40 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <TextView
-        android:id="@+id/tv_all"
+    <LinearLayout
+        android:id="@+id/layout3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/layout2"
-        android:text="All Items ☕"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:textStyle="bold"/>
+        android:layout_below="@+id/layout2"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Items ☕"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_see2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:text="See items "
+            android:textSize="18dp"/>
+
+    </LinearLayout>
 
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tv_all">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout3">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
